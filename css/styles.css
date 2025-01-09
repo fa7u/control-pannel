@@ -1,0 +1,155 @@
+:root {
+  --white-color: #ececec;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  direction: rtl;
+}
+
+/* small screen */
+@media (min-width: 768px) {
+  .container {
+    width: 748px;
+  }
+}
+
+/* medium screen */
+@media (min-width: 992px) {
+  .container {
+    width: 972px;
+  }
+}
+
+/* big screen */
+@media (min-width: 1200px) {
+  .container {
+    width: 1180px;
+  }
+}
+body {
+  background-color: #d7d7d7;
+}
+.container {
+  height: 90vh;
+  display: flex;
+  gap: 15px;
+}
+.container .nav .icon {
+  width: 40px;
+  height: 40px;
+}
+.container .nav .title {
+  font-size: 18px;
+}
+.container .nav .row {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* end reusable */
+
+.container .nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+  padding: 10px;
+  height: 100%;
+}
+.container .nav .nav-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.container .nav .nav-title img {
+  width: 50px;
+  height: 50px;
+  margin-right: auto;
+}
+summary {
+  list-style: none;
+  display: flex !important;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+summary::before {
+  content: url(../assets/icons/arrow-down-icon.png);
+  margin-right: auto;
+}
+details[open] summary::before {
+  content: url(../assets/icons/arrow-up-icon.png);
+}
+
+details .li {
+  display: flex;
+  align-items: center;
+  margin-block: 15px;
+  margin-inline-start: 25px;
+}
+details .li .list-icon {
+  width: 30px !important;
+  height: 30px !important;
+  margin-inline-end: 5px;
+}
+
+.container .right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 80%;
+}
+.container .right-section .squares {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  gap: 20px;
+}
+.container .right-section .squares .info-square {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--white-color);
+  border-radius: 5px;
+}
+
+.container .right-section .squares .info-square .sq-title {
+  font-weight: 200;
+}
+.container .right-section .squares .info-square .sq-total {
+  font-weight: bold;
+  font-size: 22px;
+}
+.container .right-section .squares .info-square .circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container .right-section .squares .info-square .flight-circle {
+  background-image: url(../assets/icons/flight-icon.png);
+
+  background-color: blue;
+}
+.container .right-section .squares .info-square .visa-circle {
+  background-image: url(../assets/icons/visa-icon.png);
+
+  background-color: green;
+}
+.container .right-section .squares .info-square .hotel-circle {
+  background-image: url(../assets/icons/hotel-icon.png);
+
+  background-color: blueviolet;
+}
+.container .right-section .squares .info-square .customer-circle {
+  background-image: url(../assets/icons/hotel-icon.png);
+
+  background-color: yellow;
+}

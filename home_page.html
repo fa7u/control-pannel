@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>control panel</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <label for="nav" class="nav-title"
+          ><h2>لوحة التحكم</h2>
+          <img class="icon" src="assets/icons/x-icon.png" alt=""
+        /></label>
+
+        <label for="dashboard" class="dashboard row">
+          <img
+            class="menu-icon icon"
+            src="assets/icons/circled_menu.png"
+            alt=""
+          />
+          <p class="title">واجهة التحكم</p>
+        </label>
+
+        <details>
+          <summary>
+            <label for="flights" class="flights row">
+              <img
+                src="assets/icons/flight-icon.png"
+                alt=""
+                class="flight-icon icon"
+              />
+              <p class="title">الرحلات</p>
+            </label>
+          </summary>
+          <label class="li title"
+            ><img
+              class="list-icon icon"
+              src="assets/icons/list-icon.png"
+              alt=""
+            />قائمة الرحلات</label
+          >
+          <label class="li title"
+            ><img
+              class="list-icon icon"
+              src="assets/icons/list-icon.png"
+              alt=""
+            />مسارات الرحلات</label
+          >
+          <label class="li title"
+            ><img
+              class="list-icon icon"
+              src="assets/icons/list-icon.png"
+              alt=""
+            />الحجوزات</label
+          >
+        </details>
+        <details>
+          <summary>
+            <label for="visa" class="visa row">
+              <img
+                src="assets/icons/visa-icon.png"
+                alt=""
+                class="visa-icon icon"
+              />
+              <p class="title">التأشيرة</p>
+            </label>
+          </summary>
+          <label class="li title"
+            ><img
+              class="list-icon icon"
+              src="assets/icons/list-icon.png"
+              alt=""
+            />قائمة التأشيرات</label
+          >
+
+          <label class="li title"
+            ><img
+              class="list-icon icon"
+              src="assets/icons/list-icon.png"
+              alt=""
+            />الحجوزات</label
+          >
+        </details>
+
+        <p class="title">الفندق</p>
+      </div>
+
+      <div class="right-section">
+        <h2>معلومات لوحة التحكم</h2>
+
+        <div class="squares">
+          <div class="total-flights info-square">
+            <label class="sq-info">
+              <p class="sq-title">مجموع الرحلات</p>
+              <p class="sq-total">156</p>
+            </label>
+            <div class="flight-circle circle"></div>
+          </div>
+          <div class="total-visas info-square">
+            <label class="sq-info">
+              <p class="sq-title">التأشيرات المفعلة</p>
+              <p class="sq-total">43</p>
+            </label>
+            <div class="visa-circle circle"></div>
+          </div>
+          <div class="total-hotels info-square">
+            <label class="sq-info">
+              <p class="sq-title">حجوزات الفنادق</p>
+              <p class="sq-total">89</p>
+            </label>
+            <div class="hotel-circle circle"></div>
+          </div>
+          <div class="total-customers info-square">
+            <label class="sq-info">
+              <p class="sq-title">مجموع العملاء</p>
+              <p class="sq-total">2345</p>
+            </label>
+            <div class="customer-circle circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
