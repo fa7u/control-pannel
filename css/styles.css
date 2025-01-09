@@ -98,18 +98,18 @@ details .li .list-icon {
   margin-inline-end: 5px;
 }
 
-.container .right-section {
+.home-page .container .right-section {
   display: flex;
   flex-direction: column;
   gap: 25px;
   width: 80%;
 }
-.container .right-section .squares {
+.home-page .container .right-section .squares {
   display: grid;
   grid-template-columns: repeat(4, minmax(250px, 1fr));
   gap: 20px;
 }
-.container .right-section .squares .info-square {
+.home-page .container .right-section .squares .info-square {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -118,14 +118,14 @@ details .li .list-icon {
   border-radius: 5px;
 }
 
-.container .right-section .squares .info-square .sq-title {
+.home-page .container .right-section .squares .info-square .sq-title {
   font-weight: 200;
 }
-.container .right-section .squares .info-square .sq-total {
+.home-page .container .right-section .squares .info-square .sq-total {
   font-weight: bold;
   font-size: 22px;
 }
-.container .right-section .squares .info-square .circle {
+.home-page .container .right-section .squares .info-square .circle {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -133,23 +133,71 @@ details .li .list-icon {
   background-repeat: no-repeat;
   background-position: center;
 }
-.container .right-section .squares .info-square .flight-circle {
+.home-page .container .right-section .squares .info-square .flight-circle {
   background-image: url(../assets/icons/flight-icon.png);
 
   background-color: blue;
 }
-.container .right-section .squares .info-square .visa-circle {
+.home-page .container .right-section .squares .info-square .visa-circle {
   background-image: url(../assets/icons/visa-icon.png);
 
   background-color: green;
 }
-.container .right-section .squares .info-square .hotel-circle {
+.home-page .container .right-section .squares .info-square .hotel-circle {
   background-image: url(../assets/icons/hotel-icon.png);
 
   background-color: blueviolet;
 }
-.container .right-section .squares .info-square .customer-circle {
+.home-page .container .right-section .squares .info-square .customer-circle {
   background-image: url(../assets/icons/hotel-icon.png);
 
   background-color: yellow;
+}
+/* end of home page */
+.flight-schedule-page .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.flight-schedule-page .container .page-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+}
+
+.flight-schedule-page .container .page-header img {
+  width: 50px;
+  height: 50px;
+  gap: 20px;
+}
+.flight-schedule-page .container .page-header .date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-inline-start: auto;
+}
+.flight-schedule-page .container .page-header .date img {
+  width: 30px;
+  height: 30px;
+}
+.flight-schedule-page .container .page-header input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.flight-schedule-page .container table {
+  background-color: var(--white-color);
+  width: 80%;
+  text-align: center;
+}
+.flight-schedule-page .container table td {
+  padding: 15px;
+}
+.flight-schedule-page .container table thead tr td {
+  background-color: beige;
 }
