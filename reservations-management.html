@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>control panel</title>
+  </head>
+  <body>
+    <div class="reservations-management-page">
+      <div class="container">
+        <div for="" class="page-header">
+          <h2>إدارة الحجوزات</h2>
+          <p class="subtitle">تعديل وادارة حجوزات المستخدمين</p>
+        </div>
+
+        <div class="edit-res">
+          <div class="header-row">
+            <p class="res-title">تعديل الحجز</p>
+
+            <button class="cancel">
+              <p>إلغاء</p>
+              <img src="assets/icons/x-icon.png" alt="" />
+            </button>
+            <button class="save">
+              <p>حفظ</p>
+              <img src="assets/icons/save-icon.png" alt="" />
+            </button>
+          </div>
+
+          <div class="res-info information">
+            <label for="" class="status">
+              <p>الحالة</p>
+              <select name="" id="status">
+                <option value="1">تحت المعالجة</option>
+                <option value="2">تحت المعالجة</option>
+              </select>
+            </label>
+            <label for="" class="total">
+              <p>السعر الاجمالي</p>
+              <input type="text" value="2500" />
+            </label>
+          </div>
+        </div>
+
+        <div class="flight-details">
+          <p class="res-title">تفاصيل الرحلة</p>
+          <div class="detail-info information">
+            <label for="" class="from"
+              ><p>من</p>
+              <input type="text" value="Riyadh" />
+            </label>
+            <label for="" class="to"
+              ><p>الى</p>
+              <input type="text" value="Dubai" />
+            </label>
+            <label for="" class="date"
+              ><p>التاريخ</p>
+              <input type="date" />
+            </label>
+            <label for="" class="trip-type">
+              <p>نوع الرحلة</p>
+              <select name="" id="type">
+                <option value="1">ذهاب</option>
+              </select>
+            </label>
+            <label for="" class="trip-level">
+              <p>درجة الحجز</p>
+              <select name="" id="level">
+                <option value="1">درجة سياحية</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="prices-pass-details">
+          <p class="res-title">تفاصيل المسافرين والأسعار</p>
+          <div class="detail-info information">
+            <label for="" class="adult"
+              ><p>البالغين</p>
+              <input type="text" value="2" />
+              <input type="text" value="2000" />
+            </label>
+            <label for="" class="child"
+              ><p>الأطفال</p>
+              <input type="text" value="1" />
+              <input type="text" value="500" />
+            </label>
+            <label for="" class="infant"
+              ><p>الرضع</p>
+              <input type="text" placeholder="العدد" />
+              <input type="text" placeholder="السعر" />
+            </label>
+          </div>
+        </div>
+
+        <label for="" class="notes">
+          <p class="res-title">ملاحظات العميل</p>
+          <textarea name="" id="notes"></textarea>
+        </label>
+
+        <div class="passengers">
+          <label for="" class="header-row">
+            <p class="res-title">المسافرون</p>
+            <img src="assets/icons/users-icon.png" alt="" />
+
+            <button class="add-pass">اضافة مسافر</button>
+          </label>
+
+          <label for="" class="header-row special">
+            <p class="pass-number">مسافر1</p>
+            <button class="delete">حذف</button>
+          </label>
+          <div class="pass-info information">
+            <label for="" class="full-name"
+              ><p>الاسم الكامل</p>
+              <input type="text" value="محمد احمد"
+            /></label>
+            <label for="" class="gender"
+              ><p>الجنس</p>
+              <input type="text" value="ذكر"
+            /></label>
+            <label for="" class="BD"
+              ><p>تاريخ الميلاد</p>
+              <input type="date"
+            /></label>
+            <label for="" class="nationality"
+              ><p>الجنسية</p>
+              <input type="text" value="سعودي"
+            /></label>
+            <label for="" class="passport-NO"
+              ><p>رقم الجواز</p>
+              <input type="text" value="A123456"
+            /></label>
+            <label for="" class="passport-expire"
+              ><p>تاريخ انتهاء الجواز</p>
+              <input type="date"
+            /></label>
+            <label for="" class="export-place"
+              ><p>مكان الاصدار</p>
+              <input type="text" value="الرياض"
+            /></label>
+            <label for="" class="passport-pic"
+              ><p>صورة الجواز</p>
+              <input type="text" value="passport1.pdf"
+            /></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

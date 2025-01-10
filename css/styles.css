@@ -9,7 +9,9 @@
   padding-right: 10px;
   direction: rtl;
 }
-
+button {
+  border: none;
+}
 /* small screen */
 @media (min-width: 768px) {
   .container {
@@ -36,6 +38,7 @@ body {
 .container {
   height: 90vh;
   display: flex;
+  flex-direction: column;
   gap: 15px;
 }
 .container .nav .icon {
@@ -51,10 +54,30 @@ body {
   gap: 25px;
 }
 
+.container .page-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+}
+
+.container .page-header img {
+  width: 50px;
+  height: 50px;
+  gap: 20px;
+}
+.container .information {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 35px;
+  align-items: end;
+}
 /* end reusable */
 
 .container .nav {
-  width: 100%;
+  width: 20%;
   display: flex;
   flex-direction: column;
   background-color: var(--white-color);
@@ -89,24 +112,29 @@ details[open] summary::before {
 details .li {
   display: flex;
   align-items: center;
-  margin-block: 15px;
-  margin-inline-start: 25px;
+  margin: 15px;
 }
 details .li .list-icon {
   width: 30px !important;
   height: 30px !important;
   margin-inline-end: 5px;
 }
-
+.home-page .container .nav .hotel {
+  font-size: 18px;
+  text-align: start;
+}
+.home-page .container {
+  flex-direction: row;
+}
 .home-page .container .right-section {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  width: 80%;
+  width: 100%;
 }
 .home-page .container .right-section .squares {
   display: grid;
-  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
 .home-page .container .right-section .squares .info-square {
@@ -154,37 +182,18 @@ details .li .list-icon {
   background-color: yellow;
 }
 /* end of home page */
-.flight-schedule-page .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.flight-schedule-page .container .page-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  width: 80%;
-}
 
-.flight-schedule-page .container .page-header img {
-  width: 50px;
-  height: 50px;
-  gap: 20px;
-}
-.flight-schedule-page .container .page-header .date {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
+.flight-schedule-page .container .page-header input[type="date"] {
+  border: none;
+  background-color: transparent;
+  direction: rtl;
   margin-inline-start: auto;
 }
 .flight-schedule-page .container .page-header .date img {
   width: 30px;
   height: 30px;
 }
-.flight-schedule-page .container .page-header input {
+.container .page-header input[type="text"] {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid gray;
@@ -200,4 +209,199 @@ details .li .list-icon {
 }
 .flight-schedule-page .container table thead tr td {
   background-color: beige;
+}
+/* end of flight schedule page  */
+
+.add-flight-page .container {
+  background-color: var(--white-color);
+  height: auto;
+  padding: 15px;
+}
+.add-flight-page .container .page-header {
+  justify-content: flex-start;
+}
+
+.add-flight-page .container .flight-info p {
+  font-size: 18px;
+}
+.add-flight-page .container .flight-info input[type="text"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 100%;
+}
+.add-flight-page .container .flight-info input {
+  border: none;
+  background-color: transparent;
+  direction: rtl;
+  margin-inline-start: auto;
+}
+
+.add-flight-page .container .class-type {
+  box-shadow: 0 0 5px 0;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.add-flight-page .container .class-type input {
+  margin-bottom: 10px;
+}
+.add-flight-page .container .available {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+/* end of add flight page */
+.add-itinerary-page .container {
+  background-color: var(--white-color);
+  height: auto;
+  padding: 15px;
+}
+.add-itinerary-page .container .page-header {
+  justify-content: flex-start;
+}
+
+.add-itinerary-page .container .itinerary-info p {
+  font-size: 18px;
+}
+.add-itinerary-page .container .itinerary-info input[type="text"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 100%;
+}
+.add-itinerary-page .container .itinerary-info input {
+  border: none;
+  background-color: transparent;
+  direction: rtl;
+  margin-inline-start: auto;
+}
+.add-itinerary-page .container .class-type {
+  box-shadow: 0 0 5px 0;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.add-itinerary-page .container .class-type input {
+  margin-bottom: 10px;
+}
+.add-itinerary-page .container .available {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+/* end of add itinerary page */
+.reservations-management-page .container {
+  background-color: var(--white-color);
+  height: auto;
+  padding-block: 15px;
+}
+.reservations-management-page .container .page-header {
+  flex-direction: column;
+  gap: 0;
+}
+.reservations-management-page .container .page-header h2 {
+  margin-block-end: 0;
+}
+
+.reservations-management-page .container .edit-res {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.reservations-management-page .container .header-row {
+  display: flex;
+  gap: 5px;
+  align-items: end;
+}
+.reservations-management-page .container .res-title {
+  margin-inline-end: auto;
+  font-size: 24px;
+  margin-block-end: 0;
+}
+.reservations-management-page .container .header-row button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: #d7d7d7;
+}
+.reservations-management-page .container .header-row button p {
+  font-size: 18px;
+}
+.reservations-management-page .container .header-row button img {
+  width: 35px;
+}
+.reservations-management-page .container .edit-res .header-row .save {
+  background-color: blue;
+  color: var(--white-color);
+}
+
+.reservations-management-page .container label p {
+  font-size: 18px;
+}
+.reservations-management-page .container label select {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+.reservations-management-page .container label input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  margin-top: 10px;
+}
+
+.reservations-management-page .container .prices-pass-details .detail-info {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.reservations-management-page .container label textarea {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  margin-top: 10px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 150px;
+}
+
+.reservations-management-page .container .passengers button {
+  background-color: green;
+  padding: 10px 20px;
+  color: var(--white-color);
+  font-size: 18px;
+  margin-inline-start: auto;
+}
+.reservations-management-page .container .passengers .res-title {
+  margin-inline-end: 1px;
+}
+.reservations-management-page .container .passengers .special {
+  background-color: powderblue;
+  margin-top: 15px;
+  padding-inline: 15px;
+}
+
+.reservations-management-page .container .passengers .delete {
+  background-color: transparent;
+  padding: 10px 20px;
+  color: red;
+  font-size: 18px;
+  margin-inline-start: auto;
+}
+.reservations-management-page .container .passengers .pass-info {
+  background-color: powderblue;
+  padding: 15px;
+  width: auto;
+  border-radius: 5px;
+}
+.reservations-management-page .container .passengers .pass-info input {
+  background-color: var(--white-color);
+  border: none;
+  border-radius: 5px;
+  margin-top: 0;
 }
